@@ -153,6 +153,7 @@
   .svc p { color: var(--muted); font-size: 15px; }
 
   /* showcase project */
+  .projects { display: flex; flex-direction: column; gap: 28px; }
   .project {
     background: linear-gradient(150deg, var(--panel-2), var(--void-2));
     border: 1px solid var(--line); border-radius: 24px; padding: 48px;
@@ -257,10 +258,10 @@
     </div>
 
     <div class="stats">
-      <div class="stat"><div class="num">23k+</div><div class="lbl">Lines shipped</div></div>
-      <div class="stat"><div class="num">20</div><div class="lbl">Custom tools built</div></div>
-      <div class="stat"><div class="num">110</div><div class="lbl">Database entries</div></div>
-      <div class="stat"><div class="num">1</div><div class="lbl">Full battle engine</div></div>
+      <div class="stat"><div class="num">32k+</div><div class="lbl">Lines shipped</div></div>
+      <div class="stat"><div class="num">2</div><div class="lbl">Full sites shipped</div></div>
+      <div class="stat"><div class="num">30</div><div class="lbl">Custom tools built</div></div>
+      <div class="stat"><div class="num">1.8k+</div><div class="lbl">Database entries</div></div>
     </div>
   </div>
 </header>
@@ -301,8 +302,10 @@
   <div class="wrap">
     <div class="sec-head">
       <div class="sec-tag">Featured work</div>
-      <h2>A wiki that's really a web app.</h2>
+      <h2>Wikis that are really web apps.</h2>
+      <p>Two full fan-game companions, each a no-dependency static site with a searchable database and a suite of interactive battle tools — designed, built, and deployed live.</p>
     </div>
+    <div class="projects">
     <div class="project">
       <div class="project-grid">
         <div>
@@ -329,6 +332,35 @@
           <div class="mini"><div class="n">20</div><div class="l">Distinct feature tools</div></div>
         </div>
       </div>
+    </div>
+
+    <div class="project">
+      <div class="project-grid">
+        <div>
+          <div class="kicker">Commissioned fan-game wiki &amp; toolset</div>
+          <h3>Pokémon Solar Eclipse Wiki</h3>
+          <p>A commissioned companion site for the Solar Eclipse fan game, built on my reusable wiki engine and themed around a starlit eclipse aesthetic. Full regional dex with detail pages and learnsets, a complete boss compendium, and a battle-tool suite — accuracy driven directly from the game's own data files.</p>
+          <div class="feat-list">
+            <span class="chip">Regional dex &amp; detail pages</span>
+            <span class="chip">Learnsets</span>
+            <span class="chip">Boss compendium</span>
+            <span class="chip">Damage calculator</span>
+            <span class="chip">Team builder</span>
+            <span class="chip">Nuzlocke randomizer</span>
+            <span class="chip">Type calculator</span>
+            <span class="chip">Move &amp; item dex</span>
+            <span class="chip">Custom theming</span>
+          </div>
+          <a href="https://solarwiki.github.io/" target="_blank" rel="noopener" class="btn btn-primary" style="font-size:14px;padding:12px 22px;">View live site →</a>
+        </div>
+        <div class="mini-stats">
+          <div class="mini"><div class="n">427</div><div class="l">Pokémon in the dex</div></div>
+          <div class="mini"><div class="n">928</div><div class="l">Sprites</div></div>
+          <div class="mini"><div class="n">834</div><div class="l">Moves catalogued</div></div>
+          <div class="mini"><div class="n">10</div><div class="l">Interactive tools</div></div>
+        </div>
+      </div>
+    </div>
     </div>
   </div>
 </section>
