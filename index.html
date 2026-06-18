@@ -153,7 +153,6 @@
   .svc p { color: var(--muted); font-size: 15px; }
 
   /* showcase project */
-  .projects { display: flex; flex-direction: column; gap: 28px; }
   .project {
     background: linear-gradient(150deg, var(--panel-2), var(--void-2));
     border: 1px solid var(--line); border-radius: 24px; padding: 48px;
@@ -258,10 +257,10 @@
     </div>
 
     <div class="stats">
-      <div class="stat"><div class="num">32k+</div><div class="lbl">Lines shipped</div></div>
-      <div class="stat"><div class="num">2</div><div class="lbl">Full sites shipped</div></div>
-      <div class="stat"><div class="num">30</div><div class="lbl">Custom tools built</div></div>
-      <div class="stat"><div class="num">1.8k+</div><div class="lbl">Database entries</div></div>
+      <div class="stat"><div class="num">43k+</div><div class="lbl">Lines shipped</div></div>
+      <div class="stat"><div class="num">3</div><div class="lbl">Live projects</div></div>
+      <div class="stat"><div class="num">1</div><div class="lbl">Paid commission</div></div>
+      <div class="stat"><div class="num">3D</div><div class="lbl">+ interactive maps</div></div>
     </div>
   </div>
 </header>
@@ -302,10 +301,34 @@
   <div class="wrap">
     <div class="sec-head">
       <div class="sec-tag">Featured work</div>
-      <h2>Wikis that are really web apps.</h2>
-      <p>Two full fan-game companions, each a no-dependency static site with a searchable database and a suite of interactive battle tools — designed, built, and deployed live.</p>
+      <h2>Things I've designed and built.</h2>
     </div>
-    <div class="projects">
+    <div class="project" style="margin-bottom:18px;">
+      <div class="project-grid">
+        <div>
+          <div class="kicker">Original IP · interactive design bible</div>
+          <h3>Spirebound</h3>
+          <p>An original high-fantasy world presented as a living, explorable design bible — a Spire of impossible floors with its own lore, bestiary, regions, and game systems. Built as a proper Vite + React app with a 3D animated hero scene, interactive maps, and a hand-crafted material design system (parchment, stone, bone). Entirely my own world and code.</p>
+          <div class="feat-list">
+            <span class="chip">3D hero scene (Three.js)</span>
+            <span class="chip">Interactive maps (Leaflet)</span>
+            <span class="chip">Bestiary &amp; lore</span>
+            <span class="chip">Game-systems pages</span>
+            <span class="chip">Damage calculator</span>
+            <span class="chip">Custom design system</span>
+            <span class="chip">Command palette</span>
+            <span class="chip">Vite · React 19</span>
+          </div>
+          <a href="https://vaereth.github.io/Spirebound/" target="_blank" rel="noopener" class="btn btn-primary" style="font-size:14px;padding:12px 22px;">View live site →</a>
+        </div>
+        <div class="mini-stats">
+          <div class="mini"><div class="n">13.7k</div><div class="l">Lines of code</div></div>
+          <div class="mini"><div class="n">60+</div><div class="l">React components</div></div>
+          <div class="mini"><div class="n">3D</div><div class="l">Animated spire scene</div></div>
+          <div class="mini"><div class="n">100%</div><div class="l">Original world &amp; IP</div></div>
+        </div>
+      </div>
+    </div>
     <div class="project">
       <div class="project-grid">
         <div>
@@ -333,34 +356,31 @@
         </div>
       </div>
     </div>
-
-    <div class="project">
+    <div class="project" style="margin-top:18px;">
       <div class="project-grid">
         <div>
-          <div class="kicker">Commissioned fan-game wiki &amp; toolset</div>
-          <h3>Pokémon Solar Eclipse Wiki</h3>
-          <p>A commissioned companion site for the Solar Eclipse fan game, built on my reusable wiki engine and themed around a starlit eclipse aesthetic. Full regional dex with detail pages and learnsets, a complete boss compendium, and a battle-tool suite — accuracy driven directly from the game's own data files.</p>
+          <div class="kicker">Client commission · paid work</div>
+          <h3>Pokémon Solar Eclipse — companion wiki</h3>
+          <p>A full companion wiki built on commission for the developer of a fan game. A large creature database plus location guides, a TM list, boss pages, a damage calculator, team builder, and a searchable FAQ — all themed to the game's own warm "eclipse" aesthetic. Real client work, delivered and live.</p>
           <div class="feat-list">
-            <span class="chip">Regional dex &amp; detail pages</span>
-            <span class="chip">Learnsets</span>
-            <span class="chip">Boss compendium</span>
+            <span class="chip">Commissioned build</span>
+            <span class="chip">Full dex &amp; detail pages</span>
+            <span class="chip">Location guides</span>
+            <span class="chip">TM list</span>
+            <span class="chip">Boss pages</span>
             <span class="chip">Damage calculator</span>
-            <span class="chip">Team builder</span>
-            <span class="chip">Nuzlocke randomizer</span>
-            <span class="chip">Type calculator</span>
-            <span class="chip">Move &amp; item dex</span>
+            <span class="chip">Searchable FAQ</span>
             <span class="chip">Custom theming</span>
           </div>
           <a href="https://solarwiki.github.io/" target="_blank" rel="noopener" class="btn btn-primary" style="font-size:14px;padding:12px 22px;">View live site →</a>
         </div>
         <div class="mini-stats">
-          <div class="mini"><div class="n">427</div><div class="l">Pokémon in the dex</div></div>
-          <div class="mini"><div class="n">928</div><div class="l">Sprites</div></div>
-          <div class="mini"><div class="n">834</div><div class="l">Moves catalogued</div></div>
-          <div class="mini"><div class="n">10</div><div class="l">Interactive tools</div></div>
+          <div class="mini"><div class="n">616</div><div class="l">Creature entries</div></div>
+          <div class="mini"><div class="n">1,034</div><div class="l">Creature sprites</div></div>
+          <div class="mini"><div class="n">13</div><div class="l">Feature pages</div></div>
+          <div class="mini"><div class="n">$</div><div class="l">Paid client work</div></div>
         </div>
       </div>
-    </div>
     </div>
   </div>
 </section>
@@ -385,7 +405,7 @@
     <div class="contact">
       <h2>Let's build something.</h2>
       <p>Got a project in mind — a site, a tool, a wiki, a game companion? Message me on Discord and let's talk it through.</p>
-      <div class="discord-tag"><span class="dot"></span> Discord: <strong>&nbsp;.vaereth.</strong></div>
+      <div class="discord-tag"><span class="dot"></span> Discord: <strong>&nbsp;your-handle-here</strong></div>
     </div>
   </div>
 </section>
