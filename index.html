@@ -172,6 +172,14 @@
     background: rgba(255,255,255,0.05); border: 1px solid var(--line-soft); color: var(--muted);
     font-family: 'Space Mono', monospace; letter-spacing: 0.3px;
   }
+  .tech-strip { display: flex; flex-wrap: wrap; gap: 10px; }
+  .tech-chip {
+    font-family: 'Space Mono', monospace; font-size: 13px; letter-spacing: 0.3px;
+    padding: 9px 15px; border-radius: 10px; color: var(--accent-3);
+    background: linear-gradient(135deg, rgba(224,120,46,0.10), rgba(196,69,42,0.04));
+    border: 1px solid var(--line); transition: transform 0.18s, border-color 0.18s;
+  }
+  .tech-chip:hover { transform: translateY(-2px); border-color: var(--accent); }
   .mini-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
   .mini {
     background: rgba(26,15,8,0.5); border: 1px solid var(--line-soft);
@@ -240,6 +248,7 @@
     <div class="nav-links">
       <a href="#services">Services</a>
       <a href="#work">Work</a>
+      <a href="#about">About</a>
       <a href="#process">Process</a>
       <a href="#contact">Contact</a>
     </div>
@@ -248,9 +257,9 @@
 
 <header>
   <div class="wrap">
-    <div class="eyebrow">Web Developer · Interactive Tools</div>
-    <h1>I build <span class="grad">websites &amp; web apps</span> people actually want to use.</h1>
-    <p class="lead">From clean marketing pages to deep, data-heavy interactive tools — custom-built, fast, and deployed on your own domain. I specialise in ambitious projects most freelancers won't touch, including full creature-game databases and battle simulators.</p>
+    <div class="eyebrow">Web Developer · 3D &amp; Interactive Tools</div>
+    <h1>I build <span class="grad">web experiences</span> most developers won't attempt.</h1>
+    <p class="lead">3D-rendered worlds, real-time battle engines, interactive maps, deep data-driven tools — designed, built, and shipped end to end. If you can imagine it in a browser, I can build it, and make it look like nothing else out there.</p>
     <div class="cta-row">
       <a href="#contact" class="btn btn-primary">Start a project →</a>
       <a href="#work" class="btn btn-ghost">See my work</a>
@@ -269,29 +278,29 @@
   <div class="wrap">
     <div class="sec-head">
       <div class="sec-tag">What I build</div>
-      <h2>One developer, the whole stack.</h2>
-      <p>Whether you need a simple site or a complex interactive system, I handle design, build, and deployment — no agency overhead, no handing your project between five people.</p>
+      <h2>One developer. The entire stack.</h2>
+      <p>Design, architecture, build, and deployment — all handled by the person who actually writes the code. No agency markup, no project lost between five hands, no junior learning on your dime. You work directly with the maker.</p>
     </div>
     <div class="services">
       <div class="svc">
-        <div class="ic">🌐</div>
-        <h3>Websites &amp; landing pages</h3>
-        <p>Fast, responsive, distinctive sites that work beautifully on every screen. Built to load instantly and deploy anywhere — GitHub Pages, Netlify, or your own host.</p>
+        <div class="ic">🎮</div>
+        <h3>3D &amp; interactive experiences</h3>
+        <p>Real-time 3D scenes, animated worlds, interactive maps, and immersive browser experiences built with Three.js and modern WebGL. The kind of work that makes people stop and look.</p>
       </div>
       <div class="svc">
         <div class="ic">⚔️</div>
-        <h3>Game wikis &amp; battle tools</h3>
-        <p>Full creature databases, dex pages, team builders, damage calculators, and working battle simulators. The deep, mechanic-heavy stuff that most builders quote and then back out of.</p>
+        <h3>Game wikis &amp; battle engines</h3>
+        <p>Full creature databases, dex pages, team builders, damage calculators, and genuine turn-based battle simulators with AI. The deep, mechanic-heavy work most builders quote — then quietly back out of.</p>
       </div>
       <div class="svc">
         <div class="ic">🧮</div>
-        <h3>Interactive web apps</h3>
-        <p>Calculators, trackers, dashboards, leaderboards, and data-driven tools. Real logic, real state, backed by a database when you need persistence.</p>
+        <h3>Custom web apps &amp; tools</h3>
+        <p>Calculators, trackers, dashboards, leaderboards, design systems — real logic, real state, backed by a database when you need it. Architected properly with React and Vite, not duct-taped together.</p>
       </div>
       <div class="svc">
-        <div class="ic">📱</div>
-        <h3>Installable apps (PWA)</h3>
-        <p>Turn a site into an installable app with a home-screen icon, offline support, and instant loading — without app-store fees or a separate codebase.</p>
+        <div class="ic">✨</div>
+        <h3>Design that stands out</h3>
+        <p>Distinctive, hand-crafted interfaces with their own visual identity — not another templated theme. Fast, responsive, installable as an app, and deployed wherever you want it. It looks the way it does because I designed it to.</p>
       </div>
     </div>
   </div>
@@ -381,6 +390,33 @@
           <div class="mini"><div class="n">$</div><div class="l">Paid client work</div></div>
         </div>
       </div>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-tag">Who you're working with</div>
+      <h2>Self-taught, self-driven, and a little obsessive about the details.</h2>
+    </div>
+    <p style="font-size:18px;color:var(--muted);max-width:62ch;line-height:1.7;margin-bottom:18px;">
+      I'm a developer from New Zealand who builds the kind of web projects most people assume need a whole team. I taught myself to design and engineer everything you see here — original game worlds, real-time battle systems, 3D scenes, full databases — and I ship them live, end to end.
+    </p>
+    <p style="font-size:18px;color:var(--muted);max-width:62ch;line-height:1.7;margin-bottom:30px;">
+      I care about two things in equal measure: that it <em style="color:var(--ink);font-style:normal;">works</em> — properly architected, fast, maintainable — and that it <em style="color:var(--ink);font-style:normal;">looks like nothing else.</em> Templates are everywhere. Distinctive, considered work isn't. That gap is where I live.
+    </p>
+    <div class="tech-strip">
+      <span class="tech-chip">JavaScript</span>
+      <span class="tech-chip">React</span>
+      <span class="tech-chip">Vite</span>
+      <span class="tech-chip">Three.js</span>
+      <span class="tech-chip">Leaflet</span>
+      <span class="tech-chip">WebGL</span>
+      <span class="tech-chip">HTML5 / CSS3</span>
+      <span class="tech-chip">Design systems</span>
+      <span class="tech-chip">PWA</span>
+      <span class="tech-chip">Git / GitHub</span>
     </div>
   </div>
 </section>
